@@ -1,0 +1,26 @@
+<table class="min-w-full border border-gray-300 bg-white">
+    <thead>
+      <tr class="bg-gray-100">
+        <th class="py-2 px-4 border-b">User ID</th>
+        <th class="py-2 px-4 border-b">User Name</th>
+        <th class="py-2 px-4 border-b">User Email</th>
+        <th class="py-2 px-4 border-b">User Contact</th>
+        <th class="py-2 px-4 border-b">User Address</th>
+        <th class="py-2 px-4 border-b">User Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userList" class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">{{ user.uId }}</td>
+        <td class="py-2 px-4 border-b">{{ user.uName }}</td>
+        <td class="py-2 px-4 border-b">{{ user.uEmail }}</td>
+        <td class="py-2 px-4 border-b">{{ user.uContact }}</td>
+        <td class="py-2 px-4 border-b">{{ user.uAddress }}</td>
+        <td class="py-2 px-4 border-b">{{ user.uPassword }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="my-4">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded" (click)="getAllUsers()">Get All Users</button>
+  </div>

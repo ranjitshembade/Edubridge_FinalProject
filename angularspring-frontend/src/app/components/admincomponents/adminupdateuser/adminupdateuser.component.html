@@ -1,0 +1,39 @@
+<form class="max-w-md mx-auto" (ngSubmit)="updateUserById()">
+    <div class="mb-4">
+        <label for="updateUId" class="block text-gray-700">User ID:</label>
+        <input type="number" id="updateUId" [(ngModel)]="userData.uId" name="uId"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div class="mb-4">
+        <label for="updateuName" class="block text-gray-700">Updated User Name:</label>
+        <input type="text" id="updateUName" [(ngModel)]="userData.uName" name="uName"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div class="mb-4">
+        <label for="updateUEmail" class="block text-gray-700">Updated User Email:</label>
+        <input type="text" id="updatUEMail" [(ngModel)]="userData.uEmail" name="uEmail"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div class="mb-4">
+        <label for="updateUContact" class="block text-gray-700">Updated User Contact:</label>
+        <input type="number" id="updateUContact" [(ngModel)]="userData.uContact" name="uContact"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div class="mb-4">
+        <label for="updateUAddress" class="block text-gray-700">Updated User Address:</label>
+        <input type="text" id="updateUAddress" [(ngModel)]="userData.uAddress" name="uAddress"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div class="mb-4">
+        <label for="updateUPassword" class="block text-gray-700">Updated User Password:</label>
+        <input type="text" id="updateUPassword" [(ngModel)]="userData.uPassword" name="uPassword"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded">Update User</button>
+</form>

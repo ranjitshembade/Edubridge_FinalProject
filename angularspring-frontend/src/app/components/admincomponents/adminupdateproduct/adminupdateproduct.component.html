@@ -1,0 +1,38 @@
+<form class="max-w-md mx-auto" (ngSubmit)="updateProductById()">
+    <div class="mb-4">
+        <label for="updatePId" class="block text-gray-700">Product ID:</label>
+        <input type="number" id="updatePId" [(ngModel)]="productData.pId" name="pId"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div class="mb-4">
+        <label for="updatePName" class="block text-gray-700">Updated Product Name:</label>
+        <input type="text" id="updatePName" [(ngModel)]="productData.pName" name="pName"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div class="mb-4">
+        <label for="updatePDescription" class="block text-gray-700">Updated Product Description:</label>
+        <input type="text" id="updatePDescription" [(ngModel)]="productData.pDescription" name="pDescription"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div class="mb-4">
+        <label for="updatePPrice" class="block text-gray-700">Updated Product Price:</label>
+        <input type="number" id="updatePPrice" [(ngModel)]="productData.pPrice" name="pPrice"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+
+    <div class="mb-4">
+        <label for="updatePQuantity" class="block text-gray-700">Updated Product Quantity:</label>
+        <input type="text" id="updatePQuantity" [(ngModel)]="productData.pQuantity" name="pQuantity"
+            class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+    </div>
+    <div class="mb-4">
+        <label for="updatePImgurl" class="block text-gray-700">Updated Product Imgurl:</label>
+        <input type="text" id="updatePImgurl" [(ngModel)]="productData.pImgurl" name="pImgurl" required
+          class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+      </div>
+
+    <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded">Update Product</button>
+</form>

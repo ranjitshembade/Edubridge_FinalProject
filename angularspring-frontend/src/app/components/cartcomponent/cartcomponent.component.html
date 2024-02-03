@@ -1,0 +1,17 @@
+<div class="bg-gray-200 p-4 rounded shadow-md">
+  <div *ngIf="cartItems.length > 0">
+    <div class="mb-4">
+      <h2 class="text-lg font-semibold mb-2">Shopping Cart</h2>
+      <div *ngFor="let item of cartItems" class="flex justify-between items-center border-b border-gray-300 py-2">
+        <p>{{ item.pName }} - {{ item.pPrice }}</p>
+      </div>
+    </div>
+    <div class="flex justify-between items-center">
+      <button class="bg-blue-500 text-white px-4 py-2 rounded" (click)="buy()">Buy</button>
+      <button class="bg-red-500 text-white px-4 py-2 rounded" (click)="clearCart()">Clear Cart</button>
+    </div>
+  </div>
+  <div *ngIf="cartItems.length === 0" class="text-center">
+    <p>Your cart is empty.</p>
+  </div>
+</div>

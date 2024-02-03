@@ -1,0 +1,38 @@
+<div class="my-8 mx-auto max-w-2xl">
+
+    <!-- Form for Fetching Product by ID -->
+    <form class="max-w-md mx-auto" (ngSubmit)="getProductById()">
+      <div class="mb-4 flex items-center">
+        <label for="fetchProductId" class="block text-gray-700">Enter Product ID:</label>
+        <input type="number" id="fetchProductId" [(ngModel)]="fetchProductId" name="fetchProductId"
+          class="ml-2 w-20 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded ml-2">Fetch</button>
+      </div>
+    </form>
+
+    <!-- Table for Product by ID -->
+    <div *ngIf="productData.pId !== undefined" class="my-8">
+      <h2>Product Details (ID: {{ productData.pId }})</h2>
+      <table class="min-w-full border border-gray-300 bg-white">
+        <thead>
+          <tr class="bg-gray-100">
+            <th class="py-2 px-4 border-b">Product ID</th>
+            <th class="py-2 px-4 border-b">Product Name</th>
+            <th class="py-2 px-4 border-b">Product Description</th>
+            <th class="py-2 px-4 border-b">Product Price</th>
+            <th class="py-2 px-4 border-b">Product Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="py-2 px-4 border-b">{{ productData.pId }}</td>
+            <td class="py-2 px-4 border-b">{{ productData.pName }}</td>
+            <td class="py-2 px-4 border-b">{{ productData.pDescription }}</td>
+            <td class="py-2 px-4 border-b">{{ productData.pPrice }}</td>
+            <td class="py-2 px-4 border-b">{{ productData.pQuantity }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+</div>

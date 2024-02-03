@@ -1,0 +1,25 @@
+<div class="flex items-center justify-center min-h-screen">
+  <div class="flex">
+    <!-- Products Panel -->
+    <div class="max-w-md p-6 bg-white rounded-lg shadow-md mr-8">
+      <h2 class="text-center text-gray-800 mb-6">Products Panel</h2>
+      <button class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/adminaddproduct']" routerLinkActive="router-link-active">Add Products</button>
+      <button class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/adminviewproduct']">View Products</button>
+      <button class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/adminviewproductbyid']">View Products by ID</button>
+      <button class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/adminupdateproduct']">Update Product by ID</button>
+      <button class="block w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/admindeleteproduct']">Delete Product by ID</button>
+    </div>
+
+    <!-- Users Panel -->
+    <div class="max-w-md p-6 bg-white rounded-lg shadow-md">
+      <h2 class="text-center text-gray-800 mb-6">Users Panel</h2>
+      <button class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/adminadduser']">Add Users</button>
+      <button class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/adminviewuser']">View Users</button>
+      <button class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/adminviewuserbyid']">View Users by ID</button>
+      <button class="block w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/adminupdateuserbyid']">Update User by ID</button>
+      <button class="block w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mb-2 rounded-full" [routerLink]="['/admindeleteuserbyid']">Delete User by ID</button>
+    </div>
+
+
+  </div>
+</div>

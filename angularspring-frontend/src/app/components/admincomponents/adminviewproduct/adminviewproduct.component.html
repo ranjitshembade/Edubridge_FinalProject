@@ -1,0 +1,26 @@
+<table class="min-w-full border border-gray-300 bg-white">
+    <thead>
+      <tr class="bg-gray-100">
+        <th class="py-2 px-4 border-b">Product ID</th>
+        <th class="py-2 px-4 border-b">Product Name</th>
+        <th class="py-2 px-4 border-b">Product Description</th>
+        <th class="py-2 px-4 border-b">Product Price</th>
+        <th class="py-2 px-4 border-b">Product Quantity</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productList" class="hover:bg-gray-50">
+        <td class="py-2 px-4 border-b">{{ product.pId }}</td>
+        <td class="py-2 px-4 border-b">{{ product.pName }}</td>
+        <td class="py-2 px-4 border-b">{{ product.pDescription }}</td>
+        <td class="py-2 px-4 border-b">{{ product.pPrice }}</td>
+        <td class="py-2 px-4 border-b">{{ product.pQuantity }}</td>
+
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="my-4">
+    <button class="bg-blue-500 text-white px-4 py-2 rounded" (click)="getAllProducts()">Get All Products</button>
+  </div>

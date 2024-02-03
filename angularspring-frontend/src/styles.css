@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.admin-panel {
+    @apply bg-blue-600 font-sans;
+  }
+
+  .admin-panel > div {
+    @apply max-w-md mx-auto p-10 bg-white rounded-lg shadow-md;
+  }
+
+  .admin-panel h2 {
+    @apply text-center text-gray-800;
+  }
+
+  .admin-panel button,
+  .admin-panel a {
+    @apply block w-full mb-10 p-14 rounded-lg text-lg text-center text-white cursor-pointer transition duration-300 box-border;
+  }
+
+  .admin-panel button {
+    @apply bg-blue-500 hover:bg-blue-700;
+  }
+
+  .admin-panel button.delete {
+    @apply bg-red-500 hover:bg-red-700;
+  }
+
+  .admin-panel a.logout {
+    @apply bg-gray-500 hover:bg-gray-700;
+  }

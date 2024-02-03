@@ -1,0 +1,35 @@
+<div class="flex flex-col items-center justify-center h-screen">
+  <div class="bg-white p-8 rounded-md shadow-md text-center">
+    <h1 class="text-4xl font-bold mb-6">Admin Login</h1>
+
+    <!-- Email Input -->
+    <div class="mb-4">
+      <input
+        type="email"
+        [(ngModel)]="username"
+        class="border p-2 w-64"
+        placeholder="Email"
+      />
+    </div>
+
+    <!-- Password Input -->
+    <div class="mb-4">
+      <input
+        type="password"
+        [(ngModel)]="password"
+        class="border p-2 w-64"
+        placeholder="Password"
+      />
+    </div>
+
+    <!-- Admin Login Button -->
+    <div>
+      <div
+        (click)="login()"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full cursor-pointer"
+      >
+        Admin Login
+      </div>
+    </div>
+  </div>
+</div>
